@@ -1,7 +1,7 @@
 import pandas as pd
-from db import get_engine
-from llm import generate_sql
-from validator import is_safe_query
+from .db import get_engine
+from .llm import generate_sql
+from .validator import is_safe_query
 
 def run_query(question: str, conversation_history: list = []) -> tuple[str, pd.DataFrame]:
     sql = generate_sql(question, conversation_history)

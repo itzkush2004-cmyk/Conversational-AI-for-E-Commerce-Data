@@ -3,11 +3,11 @@ import sys
 import os
 from datetime import datetime
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+sys.path.append(os.path.dirname(__file__))
 
-from query_runner import run_query
-from insight import generate_insight
-from confidence import get_confidence
+from src.query_runner import run_query
+from src.insight import generate_insight
+from src.confidence import get_confidence
 
 st.set_page_config(page_title="Ecom Analyst", layout="centered", page_icon="🛒")
 
